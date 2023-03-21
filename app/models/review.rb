@@ -1,3 +1,3 @@
 class Review < ApplicationRecord
-  belongs_to :dog_house
+  has_many :reviews, dependent: :destroy
 end
